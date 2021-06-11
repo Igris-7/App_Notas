@@ -1,0 +1,33 @@
+create database SistemaNotas;
+use SistemaNotas;
+
+create table estudiante(
+ dni varchar(8) primary key,
+ nombres varchar(50) not null,
+ telefono varchar(9) not null,
+ usuario varchar(20) not null,
+ clave varchar(20) not null,
+ Imagen mediumblob
+);
+
+create table curso(
+ curso_id int primary key AUTO_INCREMENT,
+ nombre varchar(30) not null,
+ docente varchar(40) not null,
+ ciclo char(2) not null,
+ creditos char(1) not null
+ dni_est varchar(8) not null
+);
+
+
+create table calificacion(
+ calificacion_id int primary key AUTO_INCREMENT,
+ curso_id int not null,
+ ev1 int,
+ ev2 int,
+ ev3 int,
+ ev4 int,
+ ev5 int,
+ promedio float,
+ FOREIGN KEY(curso_id) REFERENCES curso(curso_id),
+);

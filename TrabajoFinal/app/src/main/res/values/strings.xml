@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">TrabajoFinal</string>
+    <string name="lblCarga">Cargando sistema...</string>
+    <string name="lblInformacion">Información personal</string>
+    <string name="btnMinIngresar">Ingresar</string>
+    <string name="btnMinSalir">Salir</string>
+    <string name="copia">Derechos reservados - 2020</string>
+    <string name="txtMinUsuario">Ingrese usuario</string>
+    <string name="txtMinPassword">Ingrese su contraseña</string>
+    <string name="txtMinRegistrar">Registrarse</string>
+    <string name="lblNomAlum">Nombre del Alumno</string>
+    <string name="btnRegistroCurso">Registro del Curso</string>
+    <string name="btnListaCurso">Lista de Cursos</string>
+    <string name="btnAgregarEvaluaciones">Agregar Evaluaciones</string>
+    <string name="btnAtras">Atrás</string>
+    <string name="lblListaCurso">Lista de Cursos</string>
+    <string name="btnCurso1">Curso 1</string>
+    <string name="btnCurso2">Curso 2</string>
+    <string name="btnCurso3">Curso 3</string>
+    <string name="btnLisCursoAtras">Atras</string>
+    <string name="lblEvaluaciones">Agregar Evaluaciones</string>
+    <string name="lblCursoEvaluar">Curso</string>
+    <string name="txtCantidadNotas">Cantidad de notas</string>
+    <string name="btnEvAtras">Atrás</string>
+    <string name="btnCalcular">Calcular</string>
+    <string name="txtNota1">Ingresa nota 1</string>
+    <string name="txtNota2">Ingresa nota 2</string>
+    <string name="txtNota3">Ingresa nota 3</string>
+    <string name="txtNota4">Ingresa nota 4</string>
+    <string name="txtNota5">Ingresa nota 5</string>
+    <string name="txtPeso1">Peso 1</string>
+    <string name="txtPeso2">Peso 2</string>
+    <string name="txtPeso3">Peso 3</string>
+    <string name="txtPeso4">Peso 4</string>
+    <string name="txtPeso5">Peso 5</string>
+    <string name="txtPromedio">Promedio</string>
+    <string name="lblCalculo">Cálculo de nota</string>
+    <string name="btnAtrasTodo">Atrás</string>
+    <string name="btnSalir">Salir</string>
+    <string name="txtConfPassword">Confirmar contraseña</string>
+    <!--Registrar Curso-->
+    <string name="lblRegCurso">Registrar Curso</string>
+    <string name="txtNomProfe">Nombre Profesor</string>
+    <string name="txtNumCreditos">Número de Créditos</string>
+    <string name="txtNomCurso">Nombre del Curso</string>
+    <string name="txtCicloCurso">Ciclo del curso</string>
+
+
+    <!-- Registro de estudiante -->
+    <string name="lblTitulo">Registro de estudiante</string>
+    <string name="lblNombre">Ingrese nombre y apellidos</string>
+    <string name="lblDni">Ingrese su DNI</string>
+    <string name="lblTelefono">Ingrese número de teléfono</string>
+    <string name="btnElegir">Elegir ...</string>
+    <string name="btnRegEst">Registrar</string>
+
+    <!-- Mostrar Menú-->
+    <string name="lblUsuario">Bienvenido usuario</string>
+    <string name="RegCurso">Registrar curso</string>
+    <string name="RegNotas">Calcular notas</string>
+    <string name="RegAlarma">Registrar notificación</string>
+
+    <!--Lista de Cursos-->
+    <string name="lblNomCurso">Curso</string>
+    <string name="lblCiclo">Ciclo</string>
+    <string name="lblNumCreditos">Creditos</string>
+    <string name="lblNomProfesor">Profesor</string>
+
+    <!--Agregar Notas-->
+    <string name="btnAgregar">Agregar</string>
+    <string name="btnCalcularNota">Calcular</string>
+
+    <!--Alarmas-->
+    <string name="FechaSeleccionada">Fecha seleccionada...</string>
+    <string name="SeleccionarFecha">Seleccionar fecha</string>
+    <string name="HoraSeleccionada">Hora seleccionada...</string>
+    <string name="SeleccionarHora">Seleccionar hora</string>
+    <string name="GuardarNotificacion">Guardar</string>
+    <string name="EliminarNotificacion">Eliminar</string>
+    <string name="tvNotificaion">Notificaciones</string>
+    <string name="Asunto">Asunto</string>
+    <string name="Detalle">Detalle</string>
+    <string name="Exit">Salir</string>
+</resources>

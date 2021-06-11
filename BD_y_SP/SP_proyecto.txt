@@ -1,0 +1,122 @@
+//Registrar estudiante
+
+DELIMITER $$
+create PROCEDURE SP_AgregarEstudiante(
+IN dni varchar(8),
+IN nombres varchar(50),
+IN telefono varchar(9),
+IN usuario varchar(20),
+IN clave varchar(20),
+IN imagen mediumblob
+)
+BEGIN
+	INSERT INTO estudiante VALUES (dni, nombres, telefono, usuario, clave, imagen);
+End$$
+
+//Mostrar estudiante
+
+DELIMITER $$
+create PROCEDURE SP_MostrarPerfil(
+IN v_dni varchar(8)
+)
+BEGIN
+	SELECT * FROM estudiante where dni = v_dni;
+End$$
+
+
+
+// Ingresar Login
+
+DELIMITER $$
+create PROCEDURE SP_IngresarLogin(
+    IN v_usuario varchar(20),
+    IN v_clave varchar(20)
+)
+BEGIN
+DECLARE res INT;
+	select count(*) into res from estudiante where usuario like v_usuario  and clave like v_clave;
+	IF res = 0 THEN
+		select -1 as dni;
+	ELSE
+		select * from estudiante where usuario like v_usuario and clave like v_clave;
+	END IF;
+END $$
+
+
+//Registrar curso
+
+DELIMITER $$
+create PROCEDURE SP_AgregarCurso(
+IN nombre varchar(30),
+IN docente varchar(40),
+IN ciclo char(2),
+IN creditos char(1),
+IN dni_est varchar(8)
+)
+BEGIN
+	INSERT INTO curso VALUES (null, nombre, docente, ciclo, creditos, dni_est);
+End$$
+
+//Mostrar cursos
+
+DELIMITER $$
+create PROCEDURE SP_MostrarCursos(
+IN dni_as varchar(8)
+)
+BEGIN
+	SELECT * FROM curso INNER JOIN estudiante ON curso.dni_est = estudiante.dni where curso.dni_est = dni_as;
+
+End
+
+
+//Registrar calificacion 5
+DELIMITER $$
+create PROCEDURE SP_AgregarCalificacion5(
+IN curso_id int,
+IN ev1 int,
+IN ev2 int,
+IN ev3 int,
+IN ev4 int,
+IN ev5 int,
+IN promedio float
+)
+BEGIN
+	INSERT INTO calificacion VALUES (null, curso_id, ev1, 
+			ev2, ev3, ev4, ev5, promedio);
+End$$
+
+
+//Registrar calificacion 4
+DELIMITER $$
+create PROCEDURE SP_AgregarCalificacion4(
+IN curso_id int,
+IN ev1 int,
+IN ev2 int,
+IN ev3 int,
+IN ev4 int,
+IN promedio float
+)
+BEGIN
+	INSERT INTO calificacion VALUES (null, curso_id, ev1, 
+			ev2, ev3, ev4, "", promedio);
+End$$
+
+//Registrar calificacion 3
+DELIMITER $$
+create PROCEDURE SP_AgregarCalificacion3(
+IN curso_id int,
+IN ev1 int,
+IN ev2 int,
+IN ev3 int,
+IN promedio float
+)
+BEGIN
+	INSERT INTO calificacion VALUES (null, curso_id, ev1, 
+			ev2, ev3,"", "", promedio);
+End$$
+
+
+
+
+
+

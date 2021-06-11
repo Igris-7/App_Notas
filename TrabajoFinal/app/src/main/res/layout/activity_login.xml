@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:src="@drawable/upn"
+            android:layout_marginTop="-50px"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:gravity="center_horizontal"
+            android:text="@string/lblInformacion"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="100px"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_action_user"></ImageView>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="600px"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/txtUsuario"
+                    android:layout_width="600px"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/txtMinUsuario"
+                    android:inputType="text"
+                    android:maxLength="30" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="100px"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_action_pass"></ImageView>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="600px"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:id="@+id/txtPassword"
+                    android:layout_width="600px"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/txtMinPassword"
+                    android:inputType="textPassword"
+                    android:maxLength="8" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="30px"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnIngresar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:drawableRight="@drawable/ic_action_name"
+                android:gravity="center"
+                android:text="@string/btnMinIngresar"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btnSalir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="40dp"
+                android:layout_weight="1"
+                android:drawableRight="@drawable/ic_action_exit"
+                android:gravity="center"
+                android:text="@string/btnMinSalir"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/txtRegistrar"
+            android:layout_width="600px"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="@string/txtMinRegistrar"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textColor="@color/purple_500"
+            android:layout_marginBottom="100px"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/copia"
+            android:layout_marginBottom="20px"
+            android:gravity="center_horizontal"
+            style="@style/CardView.Dark" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
